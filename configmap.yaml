@@ -8,12 +8,12 @@ data:
     found at:\n# https://www.mediawiki.org/wiki/Manual:Configuration_settings\n\n#
     Protect against web entry\nif ( !defined( 'MEDIAWIKI' ) ) {\n\texit;\n}\n\n\n##
     Uncomment this to disable output compression\n# $wgDisableOutputCompression =
-    true;\n\n$wgSitename = \"testing\";\n$wgMetaNamespace = \"Testing\";\n\n## The
-    URL base path to the directory containing the wiki;\n## defaults for all runtime
-    URL paths are based off of this.\n## For more information on customizing the URLs\n##
-    (like /w/index.php/Page_title to /wiki/Page_title) please see:\n## https://www.mediawiki.org/wiki/Manual:Short_URL\n$wgScriptPath
+    true;\n\n$wgSitename = \"test\";\n$wgMetaNamespace = \"Test\";\n\n## The URL base
+    path to the directory containing the wiki;\n## defaults for all runtime URL paths
+    are based off of this.\n## For more information on customizing the URLs\n## (like
+    /w/index.php/Page_title to /wiki/Page_title) please see:\n## https://www.mediawiki.org/wiki/Manual:Short_URL\n$wgScriptPath
     = \"\";\n\n## The protocol and server name to use in fully-qualified URLs\n$wgServer
-    = \"http://a1c94d256bb5043bb862d9fb8a06eaf9-757908187.us-east-1.elb.amazonaws.com\";\n\n##
+    = \"http://aed95c20c1dae45e18f98b5bf48e0685-1965418296.us-east-1.elb.amazonaws.com\";\n\n##
     The URL path to static resources (images, scripts, etc.)\n$wgResourceBasePath
     = $wgScriptPath;\n\n## The URL paths to the logo.  Make sure you change this from
     the default,\n## or else you'll overwrite your logo when you upgrade!\n$wgLogos
@@ -29,7 +29,7 @@ data:
     Shared database table\n# This has no effect unless $wgSharedDB is also set.\n$wgSharedTables[]
     = \"actor\";\n\n## Shared memory settings\n$wgMainCacheType = CACHE_ACCEL;\n$wgMemCachedServers
     = [];\n\n## To enable image uploads, make sure the 'images' directory\n## is writable,
-    then set this to true:\n$wgEnableUploads = false;\n$wgUseImageMagick = true;\n$wgImageMagickConvertCommand
+    then set this to true:\n$wgEnableUploads = true;\n$wgUseImageMagick = true;\n$wgImageMagickConvertCommand
     = \"/usr/bin/convert\";\n\n# InstantCommons allows wiki to use images from https://commons.wikimedia.org\n$wgUseInstantCommons
     = false;\n\n# Periodically send a pingback to https://www.mediawiki.org/ with
     basic data\n# about this MediaWiki instance. The Wikimedia Foundation shares this
@@ -38,11 +38,11 @@ data:
     = \"en\";\n\n# Time zone\n$wgLocaltimezone = \"UTC\";\n\n## Set $wgCacheDirectory
     to a writable directory on the web server\n## to make your wiki go slightly faster.
     The directory should not\n## be publicly accessible from the web.\n#$wgCacheDirectory
-    = \"$IP/cache\";\n\n$wgSecretKey = \"a69a9e2f216d894c3d44e274724ade31ac7bbf17afbd92941f192c79ece62aaf\";\n\n#
+    = \"$IP/cache\";\n\n$wgSecretKey = \"df9588a5bc94636faa6e8c9be199003c2a24f2817d99b3cc23c70b2469c9d4df\";\n\n#
     Changing this will log out all existing sessions.\n$wgAuthenticationTokenVersion
     = \"1\";\n\n# Site upgrade key. Must be set to a string (default provided) to
     turn on the\n# web installer while LocalSettings.php is in place\n$wgUpgradeKey
-    = \"6074fb417f26cd35\";\n\n## For attaching licensing metadata to pages, and displaying
+    = \"5e88de7a43079a27\";\n\n## For attaching licensing metadata to pages, and displaying
     an\n## appropriate copyright notice / icon. GNU Free Documentation\n## License
     and Creative Commons licenses are supported so far.\n$wgRightsPage = \"\"; # Set
     to the title of a wiki page that describes your license/copyright\n$wgRightsUrl
@@ -55,7 +55,7 @@ data:
     automatically generated settings.\n# Add more configuration options below.\n\n"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2023-04-04T12:26:40Z"
+  creationTimestamp: "2023-04-04T21:22:57Z"
   managedFields:
   - apiVersion: v1
     fieldsType: FieldsV1
@@ -65,8 +65,8 @@ metadata:
         f:LocalSettings.php: {}
     manager: kubectl
     operation: Update
-    time: "2023-04-04T12:26:40Z"
+    time: "2023-04-04T21:22:57Z"
   name: local-setting
   namespace: default
-  resourceVersion: "3441"
-  uid: 479d1c9f-8e04-4d3a-9343-d34ce3758197
+  resourceVersion: "6055"
+  uid: 734823f9-f7ac-4aca-aa07-e893676d1b26
